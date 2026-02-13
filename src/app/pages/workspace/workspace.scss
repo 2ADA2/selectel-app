@@ -1,0 +1,68 @@
+.ws-container {
+  gap: 32px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.workspace-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+
+
+  & .workspace-header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & .workspace-header-value {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & div {
+        text-align: center;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  height:calc(100vh - 100px);
+  padding: 0 20px;
+
+  & aside {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 4px;
+
+    & button {
+      border: none;
+      border-radius: 8px;
+      height: 40px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  & .workspace-section {
+    width: 70%;
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.workspace-main {
+  gap: 4px;
+}

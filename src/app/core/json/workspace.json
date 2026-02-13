@@ -1,0 +1,30 @@
+{
+  "Компании": {
+    "Selectel": {
+      "value": 123
+    },
+    "Alfa": {
+      "value": 100
+    },
+    "Tinkoff": {
+      "value": 90
+    },
+    "Yandex": {
+      "value": 80
+    }
+  },
+  "Технологии": {
+    "React": {
+      "value": 110
+    },
+    "Angular": {
+      "value": 98
+    },
+    "Go": {
+      "value": 234
+    },
+    "Python": {
+      "value": 11
+    }
+  }
+}

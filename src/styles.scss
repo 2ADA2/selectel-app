@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'fonts';
+
+html, body {
+  font-family: 'JetBrains Mono', monospace;
+  height: 100%;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+

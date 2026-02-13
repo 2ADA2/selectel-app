@@ -1,0 +1,32 @@
+<header class="workspace-header">
+  <div class="workspace-header-container ws-container">
+    <div class="workspace-header-value ">
+      <div>{{ WorkspaceRu.CHAPTER }}</div>
+      <div>{{ name() }}</div>
+    </div>
+    <div class="workspace-header-value">
+      <div>{{ WorkspaceRu.CHOSEN }}</div>
+      <div>{{ chosenChapters() }}</div>
+    </div>
+    <div class="workspace-header-value">
+      <div>{{ WorkspaceRu.VALUE }}</div>
+      <div>{{ chapterSum() }}</div>
+    </div>
+  </div>
+</header>
+
+<main class="workspace-main">
+  <aside>
+    @for (chapter of names(); track $index) {
+      <button (click)="setChapter(chapter)">{{ chapter }}</button>
+    }
+  </aside>
+
+  <section class="ws-container workspace-section">
+    <div *ngFor="let position of currentChapter() || {} | keyvalue" class="checkbox-container">
+      <input type="checkbox" (change)="setChosen(position.key)" [checked]="position.value?.chosen">
+      <div>{{ position.key }}</div>
+      <div>{{ position.value.value }}</div>
+    </div>
+  </section>
+</main>
