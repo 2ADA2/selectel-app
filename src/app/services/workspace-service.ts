@@ -46,7 +46,7 @@ export class WorkspaceService {
   public setChosen(name: string) {
     const currentChapter = this.currentChapter()
     if (currentChapter) {
-      currentChapter[name].chosen = true
+      currentChapter[name].chosen = !currentChapter[name].chosen
     }
 
   }

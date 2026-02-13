@@ -54,7 +54,6 @@ export class Workspace implements OnInit {
     }
     this.chapterSum.set(val)
     this.chosenChapters.set(count)
-    console.log(this.chapterSum())
   }
 
   public setChapter(name: string) {
